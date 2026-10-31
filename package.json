@@ -1,0 +1,7 @@
+{
+  "name": "note-timeline",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {"build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs", "dev": "node esbuild.config.mjs --watch"},
+  "devDependencies": {"obsidian": "latest", "typescript": "^5.8.3", "esbuild": "^0.25.5", "@types/node": "^22.15.17"}
+}

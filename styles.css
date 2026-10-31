@@ -1,0 +1,21 @@
+.nt-root{padding:12px;overflow-y:auto;height:100%}.nt-header,.nt-modes,.nt-filter{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.nt-filter select{width:100%;max-width:100%}.nt-modes button{flex:1}.nt-modes button.is-active{background:var(--interactive-accent);color:var(--text-on-accent)}.nt-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-bottom:14px}.nt-calendar .nt-weekday{text-align:center;font-size:11px;color:var(--text-muted)}.nt-day{min-width:0;padding:6px 0!important;height:34px}.nt-day.has-data{font-weight:700;box-shadow:inset 0 -3px var(--interactive-accent)}.nt-day.is-selected{outline:2px solid var(--interactive-accent)}.nt-results{display:flex;flex-direction:column;gap:8px}.nt-card{padding:10px;border:1px solid var(--background-modifier-border);border-radius:8px;overflow-wrap:anywhere}.nt-card p{white-space:pre-wrap;max-height:240px;overflow:auto}.nt-card button{margin:3px 6px 3px 0}
+
+/* File-explorer-style hierarchical picker */
+.nt-scope{position:relative;margin-bottom:12px}
+.nt-scope-toggle{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-width:0;text-align:left}
+.nt-scope-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nt-scope-chevron{flex-shrink:0;color:var(--text-muted)}
+.nt-tree-panel{border:1px solid var(--background-modifier-border);background:var(--background-primary);border-radius:var(--radius-m);padding:6px;margin-top:5px}
+.nt-tree-search{width:100%;margin:0 0 6px 0}
+.nt-tree{max-height:min(45vh,360px);overflow:auto}
+.nt-tree-row{display:flex;align-items:center;gap:5px;min-height:28px;cursor:pointer;border-radius:var(--radius-s);padding-right:6px;user-select:none}
+.nt-tree-row:hover{background:var(--background-modifier-hover)}
+.nt-tree-row[aria-selected="true"]{background:var(--background-modifier-active-hover);color:var(--text-accent)}
+.nt-tree-expander,.nt-tree-spacer{width:17px;min-width:17px;display:inline-flex;justify-content:center;align-items:center}
+.nt-tree-expander{padding:0!important;min-height:18px!important;height:18px!important;border:0!important;background:transparent!important;box-shadow:none!important}
+.nt-tree-icon{display:flex;align-items:center;flex-shrink:0;color:var(--text-muted)}
+.nt-tree-icon svg{width:15px;height:15px}
+.nt-tree-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:var(--font-ui-small)}
+/* Line-based preview, preserving newlines and offering full expansion. */
+.nt-card p.nt-preview{white-space:pre-wrap;overflow:hidden;max-height:none;line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:var(--nt-preview-lines);line-clamp:var(--nt-preview-lines);overflow-wrap:anywhere}
+.nt-card p.nt-preview.is-expanded{display:block;-webkit-line-clamp:unset;line-clamp:unset}

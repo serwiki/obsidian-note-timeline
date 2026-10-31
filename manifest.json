@@ -1,0 +1,8 @@
+{
+  "id": "note-timeline",
+  "name": "Note Timeline",
+  "version": "0.2.0",
+  "minAppVersion": "1.5.0",
+  "description": "Calendar and note previews based on plain-text dates and file activity.",
+  "isDesktopOnly": false
+}
